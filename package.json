@@ -1,0 +1,24 @@
+{
+  "name": "timeme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "coffee-script": "^1.11.1"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottmcelveen/timeme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottmcelveen/timeme/issues"
+  },
+  "homepage": "https://github.com/scottmcelveen/timeme#readme"
+}
