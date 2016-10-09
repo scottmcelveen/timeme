@@ -1,24 +1,20 @@
 {
   "name": "timeme",
-  "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
-  "dependencies": {
-    "coffee-script": "^1.11.1"
-  },
-  "devDependencies": {
-  },
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/scottmcelveen/timeme.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/scottmcelveen/timeme/issues"
-  },
-  "homepage": "https://github.com/scottmcelveen/timeme#readme"
+  "dependencies": {
+    "body-parser": "~1.15.1",
+    "bootstrap": "3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "express-less": "0.1.0",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "pug": "2.0.0-beta6",
+    "serve-favicon": "~2.3.0"
+  }
 }

@@ -1,9 +1,15 @@
 var http = require("http");
+var express = require("express");
+var expressLess = require("express-less");
 
-http.createServer(function(request, response) {
-	console.log(request.url);
-	response.writeHead(200, {'Content-Type': 'text/plain'});
-	response.end('Hello World\n');
-}).listen(8081);
+var app = express()
+app.set('views', './views');
+app.set('view engine', 'pug');
+app.use('/bootstrapjs', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+app.use('/bootstrapless', expressLess(__dirname + '/node_modules/bootstrap/less'));
 
-console.log('Server running at http://127.0.0.1:8081/');
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Hey', message: 'Hello there!'});
+});
+
+app.listen(3000)
